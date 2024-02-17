@@ -1,0 +1,5 @@
+g++ -std=c++11 -I./ -c customer.cpp -o customer.o
+g++ -std=c++11 -I./ -c ordering.cpp -o ordering.o
+g++ -std=c++11 -I./ -c fileManip.cpp -o fileManip.o
+g++ -std=c++11 -I./ -c lineManip.cpp -o lineManip.o
+g++ ordering.o customer.o fileManip.o lineManip.o -o ordering
